@@ -61,27 +61,27 @@ This is the workflow:
 
 1. It's recommended to create a virtual environment:
 
-`python3 -m venv .venv`
+    `python3 -m venv .venv`
 
 2. Install the dependencies: 
 
-`pip install -r requirements.txt`
+    `pip install -r requirements.txt`
 
 3. Download the NLTK data by running: 
 
-`python -m nltk.downloader -d .venv/nltk_data all`
+    `python -m nltk.downloader -d .venv/nltk_data all`
 
 4. Data Preparation: to organize the downloaded raw data, execute: 
 
-`python src/organize_raw_downloaded.py`
+    `python src/organize_raw_downloaded.py`
 
 5. Model training can be done with following command, the data will be cleaned and transformed using NLP: 
 
-`python src/train_model.py`
+    `python src/train_model.py`
 
 6. New emails are classified with confidence measure when running: 
 
-`python src/predict.py`
+    `python src/predict.py`
 
 ## Configuration and Customization
 
@@ -99,8 +99,8 @@ Articles about Naive Bayes and spam detection:
 
 ## Technical Requirements
 
-The project requires Python 3.13+ and the libraries listed in [requirements.txt](). The directory structure must be maintained as described to ensure proper script functionality.
+The project requires Python 3.13+ and the libraries listed in [requirements.txt](https://github.com/phsmoura/spam-detector-ai/blob/main/requirements.txt). The directory structure must be maintained as described to ensure proper script functionality.
 
 ## License
 
-Distributed under the MIT license. See the [LICENSE]() file for more details.
+Distributed under the MIT license. See the [LICENSE](https://github.com/phsmoura/spam-detector-ai/blob/main/LICENSE) file for more details.
