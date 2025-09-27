@@ -57,33 +57,31 @@ The `SpamDetector` class allows predictions, with adjustable threshold to balanc
 
 ## Getting Started
 
-First, install the dependencies: 
+This is the workflow:
+
+1. It's recommended to create a virtual environment:
+
+`python3 -m venv .venv`
+
+2. Install the dependencies: 
 
 `pip install -r requirements.txt`
 
-Then, download the NLTK data by running: 
+3. Download the NLTK data by running: 
 
 `python -m nltk.downloader -d .venv/nltk_data all`
 
-To organize the raw data, execute: 
+4. Data Preparation: to organize the downloaded raw data, execute: 
 
 `python src/organize_raw_downloaded.py`
 
-Model training can be done with: 
+5. Model training can be done with following command, the data will be cleaned and transformed using NLP: 
 
 `python src/train_model.py`
 
-To make predictions: 
+6. New emails are classified with confidence measure when running: 
 
 `python src/predict.py`
-
-### Workflow:
-
-1. **Data Preparation**: Raw emails are automatically organized into spam and ham directories
-2. **Preprocessing**: Text is cleaned and transformed using NLP techniques
-3. **Feature Extraction**: TF-IDF converts text into numerical representation
-4. **Training**: Models are trained and evaluated with cross-validation
-5. **Prediction**: New emails are classified with confidence probabilities
 
 ## Configuration and Customization
 
